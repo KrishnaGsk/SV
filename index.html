@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Compare Price - Price Comparision portal</title>	
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+
+<body>
+	
+		<div class="main">
+			<div class="header">
+				<img src="img/img.jpg" style="padding:15px;" alt="MAIN_IMAGE">
+			</div>
+
+			<div class="info">
+				<div class="content">
+					<div class="search">
+						<div class="container">
+							<div class="row">
+						        <div class="col-sm-10">
+						            <div id="imaginary_container"> 
+						                <div class="input-group stylish-input-group">
+						                    <input type="text" class="form-control" id="text" placeholder="Search" >
+						                    <span class="input-group-addon">
+						                        <button type="submit" onclick="load_url()">
+						                            <span class="glyphicon glyphicon-search"></span>
+						                        </button>  
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+							</div>
+						</div>
+					</div>					
+				</div>		
+
+				<ul class="filters">
+					<li>Filter Your Search Here :</li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Electronics</a></li>
+					<li><a href="#">Sports Wear</a></li>
+					<li><a href="#">Appliances</a></li>
+				</ul>	
+			</div><!-- info ending-->
+
+
+
+			<div id="amazon">
+				<a href="" id="alink" ></a>
+				<a href="" id="flink"></a>
+			</div>
+
+			<div class="flipkart">
+					<h1>Please allow pop-ups in your browser before searching for a product</h1>
+			</div>
+				
+		</div>
+		
+
+		<div class="left">
+			<div class="logo">
+				<img src="img/comp.jpg" style="padding-top:10px;" alt="LOGO">
+			</div>
+			<div class="links">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="http://www.compareraja.in/aboutus">About us</a></li>
+					<li><a href="https://www.amazon.in" target="_blank">AMAZON</a></li>
+					<li><a href="https://www.flipkart.com" target="_blank">FLIPKART</a></li>
+				</ul>
+			</div>
+		</div>
+	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	
+	 
+	function load_url(){
+
+	 	
+	 		var url = document.getElementById('text').value;
+	 		var aurl = "https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords="+url+"&rh=i%3Aaps%2Ck%3A"+url;
+	 		var furl = "http://www.flipkart.com/search?q="+url+"&as=off&as-show=on&otracker=start";
+	 		var a = document.getElementById('alink');
+	 		var f = document.getElementById('flink');
+	 		a.href = aurl;
+	 		f.href = furl;
+	 		a.setAttribute('target','_blank');
+			f.setAttribute('target','_blank');
+			f.click();
+			a.click();
+		
+}
+</script>
+</body>
+</html>
+
+    </script>	 
+	
+</body>
+</html>
+

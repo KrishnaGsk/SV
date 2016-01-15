@@ -1,0 +1,72 @@
+ .left {
+ 	float: left;
+ 	width: 15%;
+ 	margin-left: 15px; }
+
+ .left h1, ul,li,a{
+ 	 clear: both;
+ 	 padding: 6px;
+ }
+ .links ul li {
+ 	text-decoration:none;
+ 	list-style: none;
+ 	background-color: #ddd;
+ 	margin: 5px;
+ 	border-radius: 2px;
+ }
+.links ul li a {
+	color:#000;
+	text-decoration: none;
+	text-align: center;
+	padding: 4px;
+}
+.logo {
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.main {
+	float: right;
+	width: 80%;
+}
+
+.main .header {
+	height: 15%;
+}
+
+.main .content {
+	height: 70%;
+}
+
+ul.filters li,a{
+display: inline;
+color:blue;	
+}
+ul.filters li a{
+display: inline;
+color:black;	
+}
+.links {
+	padding-top: 40px;
+}
+.info {
+	padding-top: 35px;
+	padding-left: 15px;
+}
+
+
+.flipkart , .amazon{
+	padding:35px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
